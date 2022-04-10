@@ -3,6 +3,10 @@ spring:
     name: user-service
 server:
   port: 0
+logging:
+  level:
+    root: info
+    com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: WARN
 eureka:
   client:
     serviceUrl:
