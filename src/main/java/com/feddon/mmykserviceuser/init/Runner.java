@@ -18,9 +18,9 @@ public class Runner implements ApplicationRunner {
 	public void run(ApplicationArguments args) {
 
 		CreateSiteParam createSiteParam = new CreateSiteParam();
-		createSiteParam.setName(RandomStringUtils.random(20));
-		createSiteParam.setDescription(RandomStringUtils.random(20));
-		createSiteParam.setUrl(RandomStringUtils.random(20));
+		createSiteParam.setName(RandomStringUtils.randomAlphanumeric(20));
+		createSiteParam.setDescription(RandomStringUtils.randomAlphanumeric(20));
+		createSiteParam.setUrl(RandomStringUtils.randomAlphanumeric(20));
 		Long siteId = siteService.createSite(createSiteParam);
 
 	}
