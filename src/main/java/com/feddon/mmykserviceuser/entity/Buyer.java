@@ -14,7 +14,7 @@ import javax.persistence.UniqueConstraint;
 @DynamicUpdate
 @Entity
 @Table(uniqueConstraints = {
-        @UniqueConstraint(columnNames = {"name"})
+//        @UniqueConstraint(columnNames = {"name"})
 })
 @Data
 public class Buyer extends AbstractEntity {

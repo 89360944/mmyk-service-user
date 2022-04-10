@@ -17,7 +17,7 @@ import java.util.Set;
 @DynamicUpdate
 @Entity
 @Table(uniqueConstraints = {
-        @UniqueConstraint(columnNames = {"name"})
+//        @UniqueConstraint(columnNames = {"name"})
 })
 @Data
 public class Site extends AbstractEntity {
