@@ -25,7 +25,12 @@ public class SiteController {
 
     @GetMapping("/test")
     public String test(HttpServletRequest request){
-        return "hello world, uri:" + request.getRequestURI();
+        return "t hello world, uri:" + request.getRequestURI();
+    }
+
+    @GetMapping("/user-service/test")
+    public String test2(HttpServletRequest request){
+        return "ut hello world, uri:" + request.getRequestURI();
     }
 
     @Operation(summary = "创建站点")
