@@ -30,7 +30,7 @@ public class SiteController {
 
     @GetMapping("/user-service/test")
     public String test2(HttpServletRequest request){
-        return "ut hello world, uri:" + request.getRequestURI();
+        return "uto hello world, uri:" + request.getRequestURI();
     }
 
     @Operation(summary = "创建站点")
