@@ -59,4 +59,4 @@ jobs:
             # 拉取最新latest版本镜像
             docker pull jzdphz/service-user
             # 运行最新latest版本镜像
-            docker run -d jzdphz/service-user
+            docker run -d -p 8080:8080 jzdphz/service-user
